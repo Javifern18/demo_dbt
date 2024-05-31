@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: ORACLE_LANDING
+    description: ""
+    tables:
+      - name: test_table
+        description: ""
+        columns:
+          - name: id
+            description: ""
+          - name: name
+            description: ""
+          - name: created_at
+            description: ""

@@ -1,0 +1,14 @@
+demo_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: civ-alsa-bronze-dev
+      dataset: dbt_jfm
+      impersonate_service_account: dbt-dev@civ-alsa-bronze-dev.iam.gserviceaccount.com
+    prod:
+      type: bigquery
+      method: oauth
+      project: civ-alsa-bronze-dev
+      dataset: dbt_jfm
